@@ -81,10 +81,9 @@
   <ItemGroup>
     <Analyzer Include="..\packages\NServiceBus.7.2.0\analyzers\dotnet\cs\NServiceBus.Core.Analyzer.dll" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="License\License.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="License\License.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\NServiceBus.Persistence.Sql.4.6.1\build\NServiceBus.Persistence.Sql.targets" Condition="Exists('..\packages\NServiceBus.Persistence.Sql.4.6.1\build\NServiceBus.Persistence.Sql.targets')" />
